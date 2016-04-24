@@ -1,0 +1,43 @@
+<nav ng-class="getNavStyle(scroll)">
+    <div class="row">
+        <div class="col md-1">
+            
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-warning" ng-click="goPrevious()"><span class="glyphicon glyphicon-menu-left"></span></button>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-warning" ng-click="goNext()"><span class="glyphicon glyphicon-menu-right"></span></button>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-warning" ng-click="goNext()"><span class="glyphicon glyphicon-plus"></span></button>
+        </div>
+        <div class="col-sm-2">
+           <button class="btn btn-warning" ng-click="zoomOut()"><span class="glyphicon glyphicon-minus"></span></button>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-warning" ng-click="rotate()"><span class="glyphicon glyphicon-repeat"></span></button>
+        </div>
+       
+        <div class="col md-1">
+            
+        </div>
+        
+    <div class="row">
+        <div class="col">
+            <div>Page: </div>
+            <input style="width=20%" type="text" min=1 ng-model="pageNum">
+            <span>{{pageNum}} / {{pageCount}} </span>
+        </div>
+        <!--
+        <div class="col" ng-controller="ViewDocumentCtrl">
+            <button class="button icon-left ion-android-download button-clear button-dark padding-right" ng-click="download()"></button>
+        </div>-->
+    </div>
+    <!--
+    <br/> &nbsp;&nbsp;
+    <span>Document URL: </span>
+    <input type="text" ng-model="pdfUrl">-->
+</nav>
+<hr> {{loading}}
+<canvas id="pdf" class="rotate0"></canvas>

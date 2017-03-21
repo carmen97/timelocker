@@ -1,12 +1,13 @@
-#Timelocker
+# TimeLocker
 TimeLocker is a responsive web application that helps the students/pupils to manage their time in a better way.
-#About
+# About
 TimeLocker was created for the FIICode contest.
-#Technology Stack
+# Technology Stack
+
 Frontend : Bootstrap <br />
 Backend : Angular Js & Firebase
 <br/>
-#TimeLocker
+# TimeLocker
 ![](http://imgur.com/wkWsOQ1.png)<br/>
 After log in with email or with social account user will be redirect to the dashboard.
 ![](http://imgur.com/C6zPnnG.png)
